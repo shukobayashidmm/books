@@ -1,5 +1,12 @@
 <h1>Editing Book</h1>
-<form>
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>error prohibited this book from being saved:
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_with model: @book do |f| %>
 
   <h4>Title</h4>
@@ -14,5 +21,4 @@
   |
   <%= link_to "Back", "/books" %>
 <% end %>
-</form>
 
