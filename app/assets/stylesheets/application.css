@@ -21,17 +21,42 @@
   box-sizing: border-box;
 }
 
+h1 {
+  padding-left: 30px;
+}
+
 table {
   display: table;
   padding-left: 30px;
 }
 
+form {
+  padding-left: 30px;
+  font-size: 13px;
+}
+
 th {
-  padding: 6px;
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
 }
 
 td {
   padding-bottom: 7px;
   padding-left: 5px;
-  padding-right: 5px;
+  text-align: left;
+  font-size: 13px;
+}
+
+p {
+  margin: 33px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.link {
+padding-left: 20px;
+font-size: 13px;
 }
